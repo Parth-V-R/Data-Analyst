@@ -20,10 +20,16 @@ class Line:
         
     def __str__(self):
         return '{}x + {}y + {} = 0'.format(self.A,self.B,self.C)
+    
+    def point_on_line(self,point):
+        if self.A*point.x_cod + self.B*point.y_cod + self.C == 0:
+            return("lies on the line")
+        else:
+            return("does not lie on the line")
 
 #Point Class Object created        
 p1=Point(0,0)
-p2=Point(-2,-1)
+p2=Point(1,1)
 
 print(p1.euclidean_distance(p2))
 
@@ -31,5 +37,7 @@ print(p2.distance_from_origin())
 
 #Line class object created
 
-L1=Line(1,2,3)
+L1=Line(1,1,-2)
 print(L1)
+
+print(L1.point_on_line(p2))
