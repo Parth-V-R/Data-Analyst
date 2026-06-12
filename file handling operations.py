@@ -16,5 +16,5 @@ f.close()
 
 # 'r' - read
 f=open('Samplefile1.txt','r')
-s=f.read()
+s=f.read(8)
 print(s)
