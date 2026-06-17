@@ -8,3 +8,8 @@ print(type(a))
 # 2D Array
 b = np.array([[1,2,3],[4,5,6]])
 print(b)
+
+# Array containing float values
+
+c=np.array([1,2,3],dtype=float)
+print(c)
