@@ -11,7 +11,8 @@ df=pd.DataFrame(data)
 
 #df.to_csv("Output.csv",index=False)
 
-df.to_excel("Output.xlsx",index=False)
+#df.to_excel("Output.xlsx",index=False)
+#df=pd.read_excel("Output.xlsx")
+#print(df)
 
-df=pd.read_excel("Output.xlsx")
-print(df)
+df.to_json("Output,json",index=False)
