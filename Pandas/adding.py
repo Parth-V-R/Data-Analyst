@@ -9,5 +9,11 @@ data={
 
 df=pd.DataFrame(data)
 
+#inserting data using assignment(not used,for basic understanding)
 df['Bonus']=df['Salary']*0.1
+print(df)
+
+#inserting data using insert - RECOMMENDED
+#syntax- insert(loc,"column_name",data)
+df.insert(0,"Emp ID",[1,2,3,4,5,6,7,8])
 print(df)
