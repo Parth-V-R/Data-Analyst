@@ -12,3 +12,6 @@ print(df)
 
 #isnull() returns boolean series,True-Value is missing or nan,False-Value Not Missing
 print(df.isnull())
+
+#isnull().sum() returns missing/nan values in each column
+print(df.isnull().sum())
